@@ -1,0 +1,16 @@
+.root {
+    -fx-cursor: hand;
+    -fx-padding: 10px;
+}
+.choicebox, .label{
+    -fx-padding: 5px;
+}
+#tabela {
+    -fx-background-color: gray;
+}
+#hb {
+    -fx-padding: 10px;
+}
+.button {
+    -fx-padding: 5px;
+}

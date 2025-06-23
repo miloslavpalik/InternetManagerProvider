@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?>
+<?import javafxappnetpack2.*?>
+<HBox id="AnchorPane" styleClass="mainFxmlClass" alignment="BOTTOM_RIGHT" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ctrl.ViewNPController">
+    <children>
+        <HBox > 
+            <children>
+                <VBox>
+                    <children>
+                        <Label text="First Name"/>
+                        <TextField fx:id="tfName" promptText="First name" ></TextField>
+                        <Label text="Last Name"/>
+                        <TextField fx:id="tfLastName" promptText="Last name" ></TextField>
+                        <Label text="Year"/>
+                        <ChoiceBox fx:id="yearCb" prefWidth="60.0"/>
+                        <Label text="Speed"/>
+                        <ChoiceBox fx:id="speedCb" prefWidth="60.0"/>
+                        <Label text="Flow"/>
+                        <ChoiceBox fx:id="flowCb" prefWidth="60.0"/>
+        
+                        <HBox fx:id="hb">
+                            <Button text="Save" fx:id="saveBtn" onAction="#saveNP"/>
+                            <Button text="Clear" fx:id="clearBtn" onAction="#clearNP"/>
+                            <Button text="Delete" fx:id="deleteBtn" onAction="#deleteNP"/>
+                        </HBox>   
+                    </children>
+                </VBox>
+                <TableView fx:id="tabela">
+
+                </TableView>
+                
+            </children>
+        </HBox>
+        <Button text="Close" onAction="#close" />
+    </children>
+    <stylesheets>
+        <URL value="@viewnp.css"/>
+    </stylesheets>
+</HBox>
